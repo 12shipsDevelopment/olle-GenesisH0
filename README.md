@@ -1,3 +1,7 @@
+
+
+
+
 # GenesisH0
 A python script for creating the parameters required for a unique genesis block. SHA256/scrypt/X11/X13/X15.
 
@@ -64,4 +68,22 @@ Create the original genesis hash found in HiroCoin (requires [xcoin-hash](https:
          the value in coins for the output, full value (exp. in bitcoin 5000000000 - To get other coins value: Block Value * 100000000)
       -b BITS, --bits=BITS
          the target in compact representation, associated to a difficulty of 1
+
+#실행
+python genesis.py --timestamp="olle = 1LXZp1j9U6VBUfKvqYtFrpDhE5r1LFijw1" --nonce=0 --time=1548720001 --pubkey="04c9a10450f6cc4dc587f18f0612c79e63499e69864765252ca4e191d12eef81ecc8385be50320de30d724369d1a02177a2d4277b304d9cbeeaed35368edd6f73c"
+
+#결과 
+
+04ffff001d0104296f6c6c65203d20314c585a70316a395536564255664b767159744672704468453572314c46696a7731
+algorithm: SHA256
+merkle hash: 188798287a2c35576e14f25a61b7bb918edc32e7c3215f0237b150409dd0d8a5
+pszTimestamp: olle = 1LXZp1j9U6VBUfKvqYtFrpDhE5r1LFijw1
+pubkey: 04c9a10450f6cc4dc587f18f0612c79e63499e69864765252ca4e191d12eef81ecc8385be50320de30d724369d1a02177a2d4277b304d9cbeeaed35368edd6f73c
+time: 1548720001
+bits: 0x1d00ffff
+Searching for genesis hash..
+249220.0 hash/s, estimate: 4.8 hgenesis hash found!
+nonce: 2531516435
+genesis hash: 0000000081ad4a71e13f60d3e420b5420c994f8d89f9c6f91b7f3d7c77ad3e22
+
 
